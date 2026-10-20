@@ -14,6 +14,9 @@ h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.05;font-weight:800}
 .grad{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
 .tag{font-size:clamp(1.05rem,2.4vw,1.4rem);color:var(--mut);margin:18px 0 30px;min-height:2em}
 .caret{color:var(--b);animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
+.quote{font-style:italic;font-size:clamp(.9rem,1.6vw,1.02rem);color:#6b7388;margin:-14px 0 28px;max-width:560px;border-left:2px solid #7c5cff60;padding-left:14px;opacity:0;animation:qf 1.4s .6s ease-out forwards}
+.quote cite{font-style:normal;color:#5b6378;font-size:.9em;white-space:nowrap}
+@keyframes qf{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .btn{display:inline-block;padding:12px 24px;border:1px solid #ffffff30;border-radius:40px;margin:0 10px 10px 0;transition:.25s;font-weight:600}
 .btn:hover{transform:translateY(-2px);border-color:var(--b);box-shadow:0 8px 30px #22d3ee30}
 .btn.pri{background:linear-gradient(90deg,var(--a),var(--b));border:0;color:#fff}
@@ -61,4 +64,4 @@ footer{text-align:center;color:var(--mut);font-size:.85rem;padding:60px 0 40px}
 @media(max-width:760px){.burger{display:block}.nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:#07090ff2;padding:10px 6vw}
 .open .nav ul{display:flex}.nav ul a{display:block;padding:10px 0}
 .about,.sk{grid-template-columns:1fr}.photo{width:160px;height:160px;margin:auto}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.quote{opacity:1}.reveal{opacity:1;transform:none}}
