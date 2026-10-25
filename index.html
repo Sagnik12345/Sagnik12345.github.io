@@ -1,81 +1,92 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sagnik Chakraborty · Physics @ IISER Kolkata</title>
+<title>Sagnik Chakraborty · Lab Notebook</title>
 <meta name="description" content="Sagnik Chakraborty, BS-MS physics student at IISER Kolkata: experimental, computational &amp; theoretical physics, quantum simulation and quantum ML.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head><body>
-<nav class="nav"><a class="logo" href="#top">SC<span>.</span></a>
-<button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
+<div class="progress" id="progress"></div>
+<nav class="nav"><a class="logo" href="#top"><span class="dot"></span>S.C. <em>lab notebook</em></a>
+<button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('open')"><span></span><span></span></button>
 <ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#cv">CV</a></li><li><a href="#contact">Contact</a></li></ul></nav>
 
-<header id="top" class="hero"><canvas id="wave"></canvas>
+<header id="top" class="hero">
+<canvas id="field" aria-hidden="true"></canvas>
 <div class="hero-in">
-<p class="kicker">BS-MS · IISER Kolkata</p>
-<h1>Sagnik <span class="grad">Chakraborty</span></h1>
-<p class="tag"><span id="typed"></span><span class="caret">|</span></p>
+<p class="mono stamp">BS-MS · IISER Kolkata</p>
+<h1>Sagnik<br><em>Chakraborty</em></h1>
+<p class="tag mono">&gt; <span id="typed"></span><span class="caret">▍</span></p>
 <blockquote class="quote">“Imagine decoding reality with mere letters and symbols.” <cite>— Sagnik</cite></blockquote>
-<div class="btns"><a class="btn pri" href="#projects">See my work</a><a class="btn" href="assets/Sagnik_cv_updated.pdf" download>Download CV</a></div>
-</div><a class="scroll" href="#about" aria-label="Scroll down"></a></header>
+<div class="btns"><a class="btn pri" href="#projects">See my work →</a><a class="btn" href="assets/Sagnik_cv_updated.pdf" download>Download CV</a></div>
+</div>
+<p class="hint mono">Fig. 1 — two-source interference · move your cursor (or tap) to shift a source</p>
+</header>
 
 <main>
-<section id="about" class="reveal"><h2><span>01</span> About</h2>
+<section id="about" class="sec reveal"><div class="sh"><span class="mono num">§01</span><h2>About</h2></div>
 <div class="about">
-<div><p>I'm a second-year BS-MS physics student at <b>IISER Kolkata</b>, drawn to <b>experimental, computational and theoretical physics</b>. I'm comfortable with Python-based numerical simulation and data analysis, and I'm building hands-on experience across lab projects, computational work and electronics.</p>
-<p>Lately I've been exploring <b>quantum simulation</b> and <b>quantum machine learning</b>. I'm eager to learn and contribute on a research internship in experimental or computational physics.</p>
-<div class="facts"><div><b>2nd Year</b><span>3rd Semester, BS-MS</span></div><div><b>BS-MS</b><span>Dual Degree</span></div></div>
-<p class="langs">Languages: English · Hindi · Bengali</p></div></div></section>
+<div class="note">
+<p>I'm a second-year BS-MS physics student at <b>IISER Kolkata</b>, drawn to <b>experimental, computational and theoretical physics</b>. I'm comfortable with Python-based numerical simulation and data analysis, and I'm building hands-on experience across lab projects, computational work and electronics.</p>
+<p>Lately I've been exploring <mark>quantum simulation</mark> and <mark>quantum machine learning</mark>. I'm eager to learn and contribute on a research internship in experimental or computational physics.</p>
+</div>
+<aside class="facts">
+<div><span class="mono">year</span><b>2nd Year</b><small>3rd Semester, BS-MS</small></div>
+<div><span class="mono">degree</span><b>BS-MS</b><small>Dual Degree</small></div>
+<div><span class="mono">lang</span><b>EN · HI · BN</b><small>English · Hindi · Bengali</small></div>
+</aside></div></section>
 
-<section id="projects" class="reveal"><h2><span>02</span> Research &amp; Projects</h2>
+<section id="projects" class="sec reveal"><div class="sh"><span class="mono num">§02</span><h2>Research &amp; Projects</h2></div>
 <div class="cards">
-<article class="card"><div class="ic">γ</div><h3>Gamma–Gamma Coincidence</h3><p class="meta">Micro Project · Prof. Satyabrata Raj, IISER Kolkata</p>
+<article class="card reveal"><div class="ch"><span class="sym">γ</span><span class="mono fig">exp. 2.1</span></div><h3>Gamma–Gamma Coincidence</h3><p class="meta mono">Micro Project · Prof. Satyabrata Raj, IISER Kolkata</p>
 <p>γ–γ coincidence experiments with <sup>60</sup>Co and <sup>137</sup>Cs sources using NaI(Tl) (2″×2″, 3″×3″), CdZnTe and HPGe detectors. MCA spectra, peak calibration, FWHM and energy resolution; Compton background subtraction to isolate coincidence peaks; resolution vs. efficiency comparison with tuned HV and amplifier settings.</p>
 <div class="tags"><i>Nuclear</i><i>Python</i><i>Origin</i><i>Detectors</i></div></article>
-<article class="card"><div class="ic">ψ</div><h3>Time Evolution of Waves</h3><p class="meta">Classical &amp; Quantum Physics · NCICP 2026, IAPT</p>
+<article class="card reveal"><div class="ch"><span class="sym">ψ</span><span class="mono fig">exp. 2.2</span></div><h3>Time Evolution of Waves</h3><p class="meta mono">Classical &amp; Quantum Physics · NCICP 2026, IAPT</p>
 <p>Python simulations of classical waves (strings, standing waves, wave packets) and quantum wave-function evolution by numerically solving the Schrödinger equation, with time-stepping solvers and probability-density visualisations.</p>
 <div class="tags"><i>NumPy</i><i>Matplotlib</i><i>Simulation</i></div></article>
-<article class="card"><div class="ic">∥</div><h3>Parallelization with MPI</h3><p class="meta">Workshop · Prof. Sudip Kr Garain · Singularity, IISER Kolkata</p>
+<article class="card reveal"><div class="ch"><span class="sym">∥</span><span class="mono fig">exp. 2.3</span></div><h3>Parallelization with MPI</h3><p class="meta mono">Workshop · Prof. Sudip Kr Garain · Singularity, IISER Kolkata</p>
 <p>Parallel numerical routines in Python with mpi4py, distributing computation across processes. Completed all exercises and benchmarked parallel vs. serial runtimes to study speedup.</p>
 <div class="tags"><i>mpi4py</i><i>HPC</i></div></article>
-<article class="card"><div class="ic">⚙</div><h3>Robotics &amp; Embedded Systems</h3><p class="meta">Arduino · C++</p>
+<article class="card reveal"><div class="ch"><span class="sym">⚙</span><span class="mono fig">exp. 2.4</span></div><h3>Robotics &amp; Embedded Systems</h3><p class="meta mono">Arduino · C++</p>
 <p>Built and programmed autonomous robot-car prototypes with motor drivers. Wireless links with nRF24L01 modules, plus Wi-Fi access-point and range-extender modes.</p>
 <div class="tags"><i>Arduino</i><i>C++</i><i>nRF24L01</i></div></article>
 </div></section>
 
-<section id="experience" class="reveal"><h2><span>03</span> Experience &amp; Workshops</h2>
-<div class="tl">
-<div class="ti up"><b>QCMA-2027</b><p>SMIT (Sikkim Manipal) · 18–22 Jan 2027 · Registered attendee</p><span class="pill">Upcoming</span></div>
-<div class="ti up"><b>India Space Lab Winter Internship</b><p>Online · Batch II · 4 Jan – 17 Feb 2027</p><span class="pill">Upcoming</span></div>
-<div class="ti up"><b>Microscopy and Electrochemistry for Materials Characterization</b><p>NPTEL Workshop · IIT Bhilai · 14–19 Dec 2026</p><span class="pill">Upcoming</span></div>
-<div class="ti up"><b>Python for Scientific Computing 2026</b><p>Aalto University, Finland · Online · 24–26 Nov 2026</p><span class="pill">Upcoming</span></div>
-<div class="ti up"><b>HSF-India Scientific Computing Workshop</b><p>IIT Mandi · 2–6 Nov 2026 · Accepted participant</p><span class="pill">Upcoming</span></div>
-<div class="ti up"><b>Relativity Reframed: Quantum Reference Frames and Gravity</b><p>Perimeter Institute · Online · 26–30 Oct 2026 · Approved virtual participant</p><span class="pill">Upcoming</span></div>
-<div class="ti"><b>SPARC Workshop on Nanobiophotonics</b><p>IISER Kolkata · 12 October 2026</p></div>
-<div class="ti"><b>National Competition in Computational Physics (NCICP 2026)</b><p>Indian Association of Physics Teachers (IAPT) · October 2026 · Participant (UG)</p></div>
-<div class="ti"><b>Gamma–Gamma Coincidence (Micro Project)</b><p>Prof. Satyabrata Raj, IISER Kolkata</p></div>
-<div class="ti"><b>Parallelization with MPI in Python</b><p>Prof. Sudip Kr Garain · Singularity: The Astronomy Club</p></div>
-<div class="ti"><b>Online Introductory School on Astronomy &amp; Astrophysics</b><p>IISER Mohali (Online)</p></div>
-<div class="ti"><b>BS-MS Dual Degree, IISER Kolkata</b><p>Currently 2nd Year</p></div>
-</div></section>
+<section id="experience" class="sec reveal"><div class="sh"><span class="mono num">§03</span><h2>Experience &amp; Workshops</h2></div>
+<ol class="tl">
+<li class="ti up"><span class="pill mono">upcoming</span><b>QCMA-2027</b><p>SMIT (Sikkim Manipal) · 18–22 Jan 2027 · Registered attendee</p></li>
+<li class="ti up"><span class="pill mono">upcoming</span><b>India Space Lab Winter Internship</b><p>Online · Batch II · 4 Jan – 17 Feb 2027</p></li>
+<li class="ti up"><span class="pill mono">upcoming</span><b>Microscopy and Electrochemistry for Materials Characterization</b><p>NPTEL Workshop · IIT Bhilai · 14–19 Dec 2026</p></li>
+<li class="ti up"><span class="pill mono">upcoming</span><b>Python for Scientific Computing 2026</b><p>Aalto University, Finland · Online · 24–26 Nov 2026</p></li>
+<li class="ti up"><span class="pill mono">upcoming</span><b>HSF-India Scientific Computing Workshop</b><p>IIT Mandi · 2–6 Nov 2026 · Accepted participant</p></li>
+<li class="ti up"><span class="pill mono">upcoming</span><b>Relativity Reframed: Quantum Reference Frames and Gravity</b><p>Perimeter Institute · Online · 26–30 Oct 2026 · Approved virtual participant</p></li>
+<li class="ti"><b>SPARC Workshop on Nanobiophotonics</b><p>IISER Kolkata · 12 October 2026</p></li>
+<li class="ti"><b>National Competition in Computational Physics (NCICP 2026)</b><p>Indian Association of Physics Teachers (IAPT) · October 2026 · Participant (UG)</p></li>
+<li class="ti"><b>Gamma–Gamma Coincidence (Micro Project)</b><p>Prof. Satyabrata Raj, IISER Kolkata</p></li>
+<li class="ti"><b>Parallelization with MPI in Python</b><p>Prof. Sudip Kr Garain · Singularity: The Astronomy Club</p></li>
+<li class="ti"><b>Online Introductory School on Astronomy &amp; Astrophysics</b><p>IISER Mohali (Online)</p></li>
+<li class="ti"><b>BS-MS Dual Degree, IISER Kolkata</b><p>Currently 2nd Year</p></li>
+</ol></section>
 
-<section id="skills" class="reveal"><h2><span>04</span> Skills &amp; Interests</h2>
-<div class="sk"><div><h3>Tools</h3><div class="chips">
+<section id="skills" class="sec reveal"><div class="sh"><span class="mono num">§04</span><h2>Skills &amp; Interests</h2></div>
+<div class="sk"><div class="panel"><h3 class="mono">// tools</h3><div class="chips">
 <i>Python</i><i>C++ (Arduino)</i><i>MPI / mpi4py</i><i>NumPy</i><i>SciPy</i><i>Matplotlib</i><i>Data analysis &amp; curve fitting</i><i>Origin</i><i>LaTeX</i><i>Arduino / embedded</i></div></div>
-<div><h3>Interests</h3><div class="chips alt">
+<div class="panel"><h3 class="mono">// interests</h3><div class="chips alt">
 <i>Experimental Physics</i><i>Computational Physics</i><i>Theoretical Physics</i><i>Nuclear Physics</i><i>Quantum Mechanics</i><i>Electrodynamics</i><i>Quantum Simulation</i><i>Quantum ML</i></div></div></div></section>
 
-<section id="cv" class="reveal"><h2><span>05</span> CV</h2>
-<div class="cvbox"><p>A one-page summary of my education, research experience and projects.</p>
-<a class="btn pri" href="assets/Sagnik_cv_updated.pdf" download>⬇ Download CV (PDF)</a> <a class="btn" href="assets/Sagnik_cv_updated.pdf" target="_blank">View</a></div></section>
+<section id="cv" class="sec reveal"><div class="sh"><span class="mono num">§05</span><h2>CV</h2></div>
+<div class="cvbox"><div><p class="mono small">appendix A · PDF</p><p>A one-page summary of my education, research experience and projects.</p></div>
+<div class="btns"><a class="btn pri" href="assets/Sagnik_cv_updated.pdf" download>⬇ Download CV (PDF)</a><a class="btn" href="assets/Sagnik_cv_updated.pdf" target="_blank" rel="noopener">View</a></div></div></section>
 
-<section id="contact" class="reveal"><h2><span>06</span> Contact</h2>
-<p class="lead">Open to research internships in experimental or computational physics. Say hi!</p>
+<section id="contact" class="sec reveal"><div class="sh"><span class="mono num">§06</span><h2>Contact</h2></div>
+<p class="lead">Open to research internships in experimental or computational physics. <em>Say hi!</em></p>
 <div class="links">
-<a href="mailto:sc25ms067@iiserkol.ac.in">✉ sc25ms067@iiserkol.ac.in</a>
-<a href="https://www.linkedin.com/in/sagnik-chakraborty-5211aa3a5" target="_blank" rel="noopener">in LinkedIn</a>
-<a href="https://github.com/Sagnik12345" target="_blank" rel="noopener">⌥ GitHub</a>
+<a href="mailto:sc25ms067@iiserkol.ac.in"><span class="mono">email</span>sc25ms067@iiserkol.ac.in</a>
+<a href="https://www.linkedin.com/in/sagnik-chakraborty-5211aa3a5" target="_blank" rel="noopener"><span class="mono">linkedin</span>Sagnik Chakraborty</a>
+<a href="https://sagnik12345.github.io/"><span class="mono">web</span>sagnik12345.github.io</a>
 </div></section>
 </main>
-<footer>© 2026 Sagnik Chakraborty · IISER Kolkata</footer>
+<footer class="mono">© 2026 Sagnik Chakraborty · IISER Kolkata</footer>
 <script src="main.js"></script>
 </body></html>
